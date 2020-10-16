@@ -1,0 +1,5 @@
+/server-build
+/public/build
+/yarn-error.log
+
+node_modules
