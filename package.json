@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "start": "NODE_ENV=development concurrently \"node_modules/.bin/remix run\" \"node_modules/.bin/nodemon --ignore app server.js\"",
-    "remix": "NODE_ENV=development concurrently remix run",
+    "remix": "remix run",
     "build": "node_modules/.bin/remix build"
   },
   "dependencies": {
@@ -20,7 +20,8 @@
     "react-error-boundary": "^3.0.2",
     "react-query": "^2.23.1",
     "react-router": "^6.0.0-beta.0",
-    "react-router-dom": "^6.0.0-beta.0"
+    "react-router-dom": "^6.0.0-beta.0",
+    "serverless-http": "^2.6.0"
   },
   "devDependencies": {
     "concurrently": "^5.3.0",
