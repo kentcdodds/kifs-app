@@ -4,6 +4,8 @@ import {useQuery} from 'react-query'
 import {ErrorBoundary, useErrorHandler} from 'react-error-boundary'
 import {matchSorter} from 'match-sorter'
 
+// console.log({React, useRouteData, useQuery})
+
 export function meta() {
   return {
     title: 'Kifs Directory',
@@ -21,9 +23,13 @@ const listFormat = new Intl.ListFormat('en-US', {
 
 function Index() {
   const [search, setSearch] = React.useState('')
-  const [{data, error}] = useRouteData()
+  // const [{data, error}] = useRouteData()
 
-  useErrorHandler(error)
+  // useErrorHandler(error)
+
+  return 'hello'
+}
+/*
 
   const kifs = matchSorter(
     Object.entries(data).map(([key, kif]) => ({key, ...kif})),
@@ -172,5 +178,6 @@ function ErrorFallback({error, resetErrorBoundary}) {
     </div>
   )
 }
+*/
 
 export default Index
